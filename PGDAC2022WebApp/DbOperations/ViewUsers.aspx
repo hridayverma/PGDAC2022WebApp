@@ -5,6 +5,7 @@
     </h2>
     <hr />
     <asp:Button ID="Button1" runat="server" Text="View All Users" OnClick="Button1_Click" /><br />
+    <div id="msg" runat="server"></div><br />
     <asp:GridView ID="GridView1" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
         <FooterStyle BackColor="#CCCCCC" />
         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />

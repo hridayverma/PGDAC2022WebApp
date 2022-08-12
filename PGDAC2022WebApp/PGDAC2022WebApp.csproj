@@ -112,7 +112,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DbOperations\AddUser.aspx" />
     <Content Include="DbOperations\DbConnection.aspx" />
+    <Content Include="DbOperations\ManageUsers.aspx" />
     <Content Include="DbOperations\ViewUsers.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="FAQ.aspx" />
@@ -180,12 +182,26 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DbOperations\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DbOperations\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DbOperations\DbConnection.aspx.cs">
       <DependentUpon>DbConnection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DbOperations\DbConnection.aspx.designer.cs">
       <DependentUpon>DbConnection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DbOperations\ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DbOperations\ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="DbOperations\ViewUsers.aspx.cs">
       <DependentUpon>ViewUsers.aspx</DependentUpon>
