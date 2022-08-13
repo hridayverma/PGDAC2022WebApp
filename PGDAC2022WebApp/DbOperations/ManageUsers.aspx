@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManageUsers.aspx.cs" Inherits="PGDAC2022WebApp.DbOperations.ManageUsers" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" Async="true"  AutoEventWireup="true" CodeBehind="ManageUsers.aspx.cs" Inherits="PGDAC2022WebApp.DbOperations.ManageUsers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <table align="center" style="width: 60%; border-collapse: collapse; border: 2px solid #FF0066; background-color: #99FFCC">
         <tr>
@@ -37,10 +37,10 @@
         </tr>
         <tr>
             <td>
-                <asp:Button ID="BtnShow" runat="server" Text="View All" />
+                <asp:Button ID="BtnShow" runat="server" Text="View All" OnClick="BtnShow_Click" />
             </td>
             <td>
-                <asp:Button ID="BtnUpdate" runat="server" Text="Update Record"  />
+                <asp:Button ID="BtnUpdate" runat="server" Text="Update Record" OnClick="BtnUpdate_Click"  />
                &nbsp; <asp:Button ID="BtnDelete" runat="server" Text="Delete Record"  />
             &nbsp;<asp:HyperLink ID="HyperLink1" 
                 NavigateUrl="~/DbOperations/AddUser.aspx" runat="server">

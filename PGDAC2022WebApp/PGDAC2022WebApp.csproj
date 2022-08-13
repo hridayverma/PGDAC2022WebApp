@@ -189,6 +189,7 @@
     <Compile Include="DbOperations\AddUser.aspx.designer.cs">
       <DependentUpon>AddUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DbOperations\BusinessLogic.cs" />
     <Compile Include="DbOperations\DbConnection.aspx.cs">
       <DependentUpon>DbConnection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

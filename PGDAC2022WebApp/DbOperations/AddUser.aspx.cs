@@ -26,10 +26,12 @@ namespace PGDAC2022WebApp.DbOperations
             //for numeric data "+controlvalue+"
             //normal/concatnated query
             string qry = "insert into userdetails values('"+TxtFullName.Text+"','"+TxtPassword.Text+"','"+TxtEmail.Text+"',"+TxtMobile.Text+",'"+TxtAddress.Text+"')";
-            cmd = new SqlCommand(qry, con);
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
+            //without business logic
+            /* cmd = new SqlCommand(qry, con);
+             con.Open();
+             cmd.ExecuteNonQuery();
+             con.Close();*/
+            BusinessLogic.ExecuteQry(qry);//using businesslogic method
             Label1.Text = "User Details Saved Successfully!!!!";
             ClearText();//to reset textboxes current values
             BindMaxUserID();
